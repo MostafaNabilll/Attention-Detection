@@ -7,11 +7,11 @@ import os
 
 absolute_path = os.path.dirname(__file__)
 
-full_path = os.path.join(absolute_path, "Saved Model\\")
+full_path = os.path.join(absolute_path, "Saved Model")
 
 @st.cache(allow_output_mutation=True)
 def load_model():
-    model = tf.keras.models.load_model(full_path + "res_model_4.hdf5",
+    model = tf.keras.models.load_model(full_path + "/res_model_4.hdf5",
                                        custom_objects={'KerasLayer': hub.KerasLayer})
     return model
 
