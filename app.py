@@ -7,7 +7,7 @@ import numpy as np
 
 @st.cache(allow_output_mutation=True)
 def load_model():
-    model = tf.keras.models.load_model("D:/Uni/EPITA/S4/Computer Vision/Final/Saved Model/res_model_4.hdf5", custom_objects={'KerasLayer': hub.KerasLayer})
+    model = tf.keras.models.load_model("D:/Uni/EPITA/S4/Computer Vision/Attention-Detection/res_model_4.hdf5", custom_objects={'KerasLayer': hub.KerasLayer})
     return model
 
 
